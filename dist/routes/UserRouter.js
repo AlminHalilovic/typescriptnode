@@ -26,7 +26,7 @@ class UserRouter {
                         city: x.dataValues.city
                     };
                 });
-                res.send(JSON.stringify("nothing"));
+                res.send(JSON.stringify(mappedUsers));
             }
             catch (ex) {
                 res.send({ status: 500, response: ex });

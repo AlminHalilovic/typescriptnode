@@ -31,7 +31,7 @@ class App {
             });
         });
         this.express.use('/', router);
-        this.express.use('/api/v1/sample', UserRouter_1.default);
+        this.express.use('/api/v1/users', UserRouter_1.default);
     }
 }
 Object.defineProperty(exports, "__esModule", { value: true });

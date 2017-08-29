@@ -38,7 +38,7 @@ class App {
             });
         });
         this.express.use('/', router);
-        this.express.use('/api/v1/sample', SampleRouter);
+        this.express.use('/api/v1/users', SampleRouter);
     }
 
 }

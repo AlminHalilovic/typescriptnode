@@ -5,13 +5,13 @@ const SequelizeStatic = require("sequelize");
 class Database {
     constructor() {
         this.basename = path.basename(module.filename);
-        let dialect = process.env.dialect;
-        let database = process.env.database;
-        let host = process.env.host;
-        let username = process.env.username;
-        let password = process.env.password;
-        let driver = process.env.driver;
-        let port = process.env.mssqlport;
+        let dialect = process.env.dbdialect;
+        let database = process.env.dbname;
+        let host = process.env.dbhost;
+        let username = process.env.dbusername;
+        let password = process.env.dbpassword;
+        let driver = process.env.dbdriver;
+        let port = process.env.dbport;
         let options = {
             dialect: dialect,
             database: database,

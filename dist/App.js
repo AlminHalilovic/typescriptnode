@@ -32,6 +32,9 @@ class App {
         });
         this.express.use('/', router);
         this.express.use('/api/v1/users', UserRouter_1.default);
+        this.express.use(function (req, res, next) {
+            res.status(404).send("Not found");
+        });
     }
 }
 Object.defineProperty(exports, "__esModule", { value: true });

@@ -38,7 +38,10 @@ class App {
             });
         });
         this.express.use('/', router);
-        this.express.use('/api/v1/sample', SampleRouter);
+        this.express.use('/api/v1/users', SampleRouter);
+        this.express.use(function (req, res, next) {
+            res.status(404).send("Not found");
+        });
     }
 
 }
